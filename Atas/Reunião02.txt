@@ -1,0 +1,5 @@
+No dia 06/07, das 20:00 às 20:40 realizamos uma reunião via Teams.
+
+
+Nessa reunião tratamos da utilização do caderno de anotações do personagem Charles, objeto feito na aula de Computação Gráfica, e a função da personagem que havia aparecido no teaser apresentado no 1º trimestre, assim como a afinidade que possui com o personagem Calebe.
+Optamos por conversar com o professor Matheus Gatti para definir a viabilidade da implementação da nova ideia para andamento do jogo.
