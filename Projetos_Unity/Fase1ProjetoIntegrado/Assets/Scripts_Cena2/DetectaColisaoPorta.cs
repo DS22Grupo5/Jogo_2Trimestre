@@ -20,7 +20,6 @@ public class DetectaColisaoPorta : MonoBehaviour
     {
         if(collisionInfo.gameObject.tag == "Player")
         {
-            Debug.Log("Teste");
             SceneManager.LoadScene("Fase1_Parte4");
             
         }

@@ -7,6 +7,7 @@ public class CharacterControrllerCena2 : MonoBehaviour
     public Rigidbody2D rig;
     public Animator animar_personagem;
     public SpriteRenderer spriteRenderer;
+    public AudioSource Audio;
     public float speed;
     public float JumpForce;
     public float y_inicial;
@@ -54,6 +55,7 @@ public class CharacterControrllerCena2 : MonoBehaviour
         {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             animar_personagem.SetBool("jump", true);
+            Audio.Play();
         }
     }
     void OnTriggerStay2D(Collider2D collisionInfo)
@@ -61,10 +63,6 @@ public class CharacterControrllerCena2 : MonoBehaviour
         if(collisionInfo.gameObject.layer == 9 || collisionInfo.gameObject.layer == 10)
         {
             animar_personagem.SetBool("jump", false);
-        }
-        if(collisionInfo.gameObject.layer == 14)
-        {
-            Debug.Log("Perder Vida");
         }
     }
 }

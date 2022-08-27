@@ -40,7 +40,6 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log(position_fruit.position.x);
         Move();
         if(transform.position.y <= y_inicial + 0.5){
             Jump();
@@ -83,7 +82,6 @@ public class CharacterController : MonoBehaviour
     {
         if(collisionInfo.gameObject.tag == "Respawn" && carro_explodido == false)
         {
-            Debug.Log(sprite_carro.sprite);
             Audio_ExplodirCarro.Play();
         
             carro_explodido = true;
@@ -105,7 +103,6 @@ public class CharacterController : MonoBehaviour
         {
             if(collisionInfo.gameObject.layer == 8 && position_fruit.position.x >= 3)
             {
-                Debug.Log("Lata coletada");
                 fruta_existe = false;
                 Destroy(GameObject.Find("Lata"));
             }

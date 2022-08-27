@@ -15,14 +15,13 @@ public class EntrarLaboratorio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log()   
+        
     }
     void OnTriggerEnter2D(Collider2D collisionInfo)
     {
         if(collisionInfo.gameObject.tag == "Player")
         {
             spriteRenderer.sprite = new_sprite;
-            Debug.Log(GameObject.Find("Personagem"));
 
         }
     }
